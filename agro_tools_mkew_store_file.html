@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGRO TOOLS MKEW | Agricultural Equipment</title>
+<style>
+:root{--green:#176b3a;--green2:#238447;--yellow:#ffdf32;--cream:#f6f8f3;--ink:#17251b;--muted:#66736a;--line:#e0e7df;--white:#fff;--shadow:0 8px 28px #183c2110}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--cream);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:10px;padding:11px 15px;font-weight:700}.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{max-width:1200px;margin:auto;padding:12px 20px;display:flex;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:12px;min-width:220px;color:var(--green);font-weight:900;letter-spacing:.3px}.logo-img{width:48px;height:48px;border-radius:12px;object-fit:cover;background:var(--yellow);display:grid;place-items:center}.brand small{display:block;color:#64736a;font-size:10px;letter-spacing:1.6px;margin-top:2px}.search{flex:1;display:flex;border:2px solid #d8e3d9;border-radius:12px;background:#fff;overflow:hidden}.search input{border:0;outline:0;padding:12px;width:100%;min-width:50px}.search button{border-radius:0;background:var(--yellow);color:#17251b}.navbtn{background:white;color:var(--ink);border:1px solid var(--line)}.hero{background:linear-gradient(120deg,#155d33,#26834b);color:white;padding:46px 20px}.hero-inner{max-width:1160px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:0 0 14px;max-width:650px}.hero p{font-size:17px;line-height:1.6;color:#e1f0e4;max-width:580px}.hero .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.primary{background:var(--yellow);color:#1a2a1e}.secondary{background:#ffffff1c;color:#fff;border:1px solid #ffffff75}.hero-art{font-size:110px;background:#ffffff12;border:1px solid #ffffff25;border-radius:32px;padding:25px;min-width:190px;text-align:center}.wrap{max-width:1160px;margin:28px auto;padding:0 20px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}.section-head h2{margin:0;font-size:25px}.muted{color:var(--muted)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.chip{background:#fff;border:1px solid var(--line);color:#34453a}.chip.active{background:var(--green);color:#fff;border-color:var(--green)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}.product-art{height:165px;width:100%;object-fit:cover;background:linear-gradient(135deg,#edf6e9,#fff8d4);display:grid;place-items:center;font-size:55px}.product-body{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.tag{font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--green);text-transform:uppercase}.product h3{margin:0;font-size:18px}.product p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.price-row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:7px}.price{font-size:19px;font-weight:900}.product-actions{display:flex;gap:8px;margin-top:7px}.green{background:var(--green);color:#fff}.outline{background:white;border:1px solid var(--line);color:var(--green)}.full{width:100%}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.feature{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.feature strong{display:block;margin:8px 0}.contact{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.contact h2{margin:0 0 7px}.footer{margin-top:38px;background:#102e1b;color:#e9f2eb;padding:28px 20px;text-align:center}.footer small{color:#b5cbb9}.hidden{display:none!important}.modal-bg{position:fixed;inset:0;background:#10221699;z-index:20;display:grid;place-items:center;padding:18px}.modal{background:white;border-radius:18px;width:min(560px,100%);max-height:90vh;overflow:auto;padding:24px;box-shadow:0 20px 70px #0003}.modal h2{margin-top:0}.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.field label{font-size:13px;font-weight:700}.field input,.field select,.field textarea{padding:11px;border:1px solid #cbd6cc;border-radius:9px;width:100%;background:#fff}.modal-actions{display:flex;gap:9px;justify-content:flex-end;margin-top:12px}.admin-shell{max-width:1160px;margin:26px auto;padding:0 20px}.admin-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.tabs{display:flex;gap:8px;margin:16px 0;flex-wrap:wrap}.tab{background:#e8efe8;color:#25432e}.tab.active{background:var(--green);color:white}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}.admin-list{display:grid;gap:10px}.admin-item{border:1px solid var(--line);border-radius:12px;padding:13px;display:flex;align-items:center;justify-content:space-between;gap:12px}.admin-item .detail{flex:1}.admin-item strong{display:block}.admin-item small{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}.stat{background:#f3f8f0;padding:15px;border-radius:12px}.stat b{font-size:24px;display:block}.empty{text-align:center;padding:28px;color:var(--muted)}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#17251b;color:#fff;padding:12px 18px;border-radius:12px;z-index:40;box-shadow:var(--shadow)}@media(max-width:760px){.nav{flex-wrap:wrap;gap:10px}.brand{min-width:0;flex:1}.search{order:3;flex-basis:100%}.navbtn{padding:9px}.hero-inner{align-items:flex-start}.hero-art{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.product-art{height:120px}.product-body{padding:12px}.product h3{font-size:16px}.features{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.stats{grid-template-columns:1fr}.admin-item{align-items:flex-start;flex-wrap:wrap}.formrow{grid-template-columns:1fr}}@media(max-width:420px){.grid{grid-template-columns:1fr}.hero{padding:34px 18px}.wrap,.admin-shell{padding:0 14px}.section-head{align-items:flex-start;flex-direction:column}}
+</style></head>
+<body>
+<header class="top" id="topNav">
+  <div class="nav">
+    <div class="brand">
+      <img id="brandLogoImg" src="" class="logo-img hidden" alt="Logo">
+      <div id="brandLogoEmoji" class="logo" style="width:42px;height:42px;background:var(--yellow);border-radius:12px;display:grid;place-items:center;font-size:24px">🚜</div>
+      <div><span id="brandTitle">AGRO TOOLS MKEW</span><small>SRI MURALI KRISHNA ENGINEERING WORKS</small></div>
+    </div>
+    <div class="search">
+      <input id="searchInput" placeholder="Search ploughs, agricultural tools..." aria-label="Search products">
+      <button onclick="renderProducts()">Search</button>
+    </div>
+    <button class="navbtn" onclick="showShop()">Home</button>
+    <button class="navbtn" onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
+    <button class="navbtn" id="customerProfileBtn" onclick="openCustomerProfile()">👤 Profile</button>
+  </div>
+</header>
+
+<main id="shopView">
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="tag" style="color:#ffdf32">TOOLS FOR BETTER HARVESTS</div>
+        <h1>Strong tools.<br>Stronger farming.</h1>
+        <p>Explore agricultural equipment built to help make farm work easier. Browse our products and contact Sri Murali Krishna Engineering Works for prices and orders.</p>
+        <div class="actions">
+          <button class="primary" onclick="document.getElementById('productsSection').scrollIntoView({behavior:'smooth'})">Explore products ↓</button>
+          <button class="secondary" onclick="document.getElementById('contactSection').scrollIntoView({behavior:'smooth'})">Contact the seller</button>
+        </div>
+      </div>
+      <div class="hero-art">🌱🚜</div>
+    </div>
+  </section>
+
+  <section class="wrap" id="productsSection">
+    <div class="section-head">
+      <div>
+        <div class="tag">OUR CATALOGUE</div>
+        <h2>Farm equipment</h2>
+        <div class="muted">Choose a product to view details or enquire.</div>
+      </div>
+      <span class="muted" id="resultCount"></span>
+    </div>
+    <div class="chips" id="categoryChips"></div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="features">
+      <div class="feature"><div style="font-size:27px">🛠️</div><strong>Practical equipment</strong><span class="muted">Tools for everyday farm needs.</span></div>
+      <div class="feature"><div style="font-size:27px">📞</div><strong>Talk to the seller</strong><span class="muted">Ask about price, availability and delivery.</span></div>
+      <div class="feature"><div style="font-size:27px">🌾</div><strong>Made for farming</strong><span class="muted">Find the right equipment for your work.</span></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="contactSection">
+    <div class="contact">
+      <div>
+        <h2>Need help choosing equipment?</h2>
+        <div class="muted">Contact Sri Murali Krishna Engineering Works for product details and order enquiries.</div>
+        <p><strong>Seller phone:</strong> <span id="sellerPhoneText">Add your business phone in Admin settings</span></p>
+      </div>
+      <div style="display:flex;gap:9px;flex-wrap:wrap">
+        <button class="green" onclick="callSeller()">📞 Call seller</button>
+        <button class="outline" onclick="openEnquiry()">Send enquiry</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section id="adminView" class="hidden">
+  <div class="admin-shell">
+    <div class="admin-header">
+      <div>
+        <div class="tag">STORE MANAGEMENT</div>
+        <h1 style="margin:4px 0">Admin dashboard</h1>
+        <div class="muted">Manage catalogue and customer order requests on this device.</div>
+      </div>
+      <button class="outline" onclick="showShop()">← Back to shop</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><span class="muted">Products</span><b id="statProducts">0</b></div>
+      <div class="stat"><span class="muted">Total orders</span><b id="statOrders">0</b></div>
+      <div class="stat"><span class="muted">Pending orders</span><b id="statPending">0</b></div>
+    </div>
+    <div class="tabs">
+      <button class="tab active" id="tabProducts" onclick="switchAdminTab('products')">Products</button>
+      <button class="tab" id="tabOrders" onclick="switchAdminTab('orders')">Customer orders</button>
+      <button class="tab" id="tabSettings" onclick="switchAdminTab('settings')">Store settings</button>
+    </div>
+    <div class="panel" id="adminPanel"></div>
+    <p class="muted" style="font-size:12px;line-height:1.5">Prototype note: this demo stores data in this browser only. It is not a secure online admin system yet.</p>
+  </div>
+</section>
+
+<div id="modalRoot"></div>
+<div id="toast" class="toast hidden"></div>
+
+<footer class="footer">
+  <strong>AGRO TOOLS MKEW</strong><br>
+  <small>Sri Murali Krishna Engineering Works · Agricultural equipment</small>
+</footer>
+
+<script>
+const defaultProducts=[
+  {id:1,name:'Agricultural Plough',category:'Ploughs',price:'Contact for price',image:'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=600&q=80',desc:'Reliable plough equipment for soil preparation and farm work.',active:true},
+  {id:2,name:'Mini Plough',category:'Mini equipment',price:'Contact for price',image:'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=600&q=80',desc:'Compact plough option for suitable small-scale farming needs.',active:true},
+  {id:3,name:'Cultivator Tool',category:'Farm tools',price:'Contact for price',image:'https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=600&q=80',desc:'Equipment for everyday soil cultivation tasks.',active:true},
+  {id:4,name:'Agricultural Implement',category:'Farm tools',price:'Contact for price',image:'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=600&q=80',desc:'Ask us about available equipment and suitable applications.',active:true},
+  {id:5,name:'Heavy-Duty Plough',category:'Ploughs',price:'Contact for price',image:'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80',desc:'A robust equipment option. Contact the seller for specifications.',active:true},
+  {id:6,name:'Farm Equipment Part',category:'Spare parts',price:'Contact for price',image:'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=600&q=80',desc:'Enquire about parts and compatibility before ordering.',active:true}
+];
+
+const get=(k,d)=>{try{const x=localStorage.getItem(k);return x?JSON.parse(x):d}catch{return d}};
+let products=get('agro_products',defaultProducts),
+    orders=get('agro_orders',[]),
+    settings=get('agro_settings',{phone:'',business:'Sri Murali Krishna Engineering Works',logoUrl:'',logoEmoji:'🚜'}),
+    cart=get('agro_cart',[]),
+    customer=get('agro_customer',{name:'',phone:'',address:''}),
+    category='All',
+    adminTab='products',
+    editingId=null;
+
+function save(){
+  localStorage.setItem('agro_products',JSON.stringify(products));
+  localStorage.setItem('agro_orders',JSON.stringify(orders));
+  localStorage.setItem('agro_settings',JSON.stringify(settings));
+  localStorage.setItem('agro_cart',JSON.stringify(cart));
+  localStorage.setItem('agro_customer',JSON.stringify(customer));
+}
+
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function money(p){return p||'Contact for price'}
+
+function updateBranding(){
+  document.getElementById('brandTitle').textContent=settings.business||'AGRO TOOLS MKEW';
+  const imgEl=document.getElementById('brandLogoImg');
+  const emojiEl=document.getElementById('brandLogoEmoji');
+  if(settings.logoUrl){
+    imgEl.src=settings.logoUrl;
+    imgEl.classList.remove('hidden');
+    emojiEl.classList.add('hidden');
+  }else{
+    emojiEl.textContent=settings.logoEmoji||'🚜';
+    emojiEl.classList.remove('hidden');
+    imgEl.classList.add('hidden');
+  }
+}
+
+function renderProducts(){
+  updateBranding();
+  const q=(document.getElementById('searchInput')?.value||'').toLowerCase();
+  const cats=['All',...new Set(products.filter(p=>p.active!==false).map(p=>p.category||'Other'))];
+  if(!cats.includes(category))category='All';
+  
+  document.getElementById('categoryChips').innerHTML=cats.map(c=>`<button class="chip ${category===c?'active':''}" onclick="setCategory('${esc(c).replace(/'/g,"\\'")}')">${esc(c)}</button>`).join('');
+  
+  const list=products.filter(p=>p.active!==false&&(category==='All'||p.category===category)&&`${p.name} ${p.category} ${p.desc}`.toLowerCase().includes(q));
+  document.getElementById('resultCount').textContent=`${list.length} item${list.length===1?'':'s'}`;
+  
+  document.getElementById('productGrid').innerHTML=list.length?list.map(p=>{
+    const mediaHtml=p.image ? `<img src="${esc(p.image)}" class="product-art" alt="${esc(p.name)}">` : `<div class="product-art">${esc(p.logoEmoji||'🚜')}</div>`;
+    return `<article class="product">
+      ${mediaHtml}
+      <div class="product-body">
+        <div class="tag">${esc(p.category||'Farm tools')}</div>
+        <h3>${esc(p.name)}</h3>
+        <p>${esc(p.desc||'Contact the seller for details.')}</p>
+        <div class="price-row"><span class="price" style="font-size:${String(p.price).length>16?'14px':'18px'}">${esc(money(p.price))}</span></div>
+        <div class="product-actions"><button class="green full" onclick="addToCart(${p.id})">Add to cart</button><button class="outline" onclick="productDetails(${p.id})">Details</button></div>
+      </div>
+    </article>`;
+  }).join(''):'<div class="empty" style="grid-column:1/-1">No products found. Try another search.</div>';
+
+  document.getElementById('sellerPhoneText').textContent=settings.phone||'Add your business phone in Admin settings';
+  document.getElementById('cartCount').textContent=cart.reduce((a,x)=>a+x.qty,0);
+}
+
+function setCategory(c){category=c;renderProducts()}
+function showShop(){document.getElementById('shopView').classList.remove('hidden');document.getElementById('adminView').classList.add('hidden');document.getElementById('topNav').classList.remove('hidden');renderProducts();window.scrollTo(0,0)}
+
+function addToCart(id){
+  const p=products.find(x=>x.id===id);if(!p)return;
+  const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});
+  save();renderProducts();toast('Added to cart');
+}
+
+function productDetails(id){
+  const p=products.find(x=>x.id===id);if(!p)return;
+  const mediaHtml=p.image?`<img src="${esc(p.image)}" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:16px" alt="">`:`<div class="product-art" style="border-radius:12px;margin-bottom:16px">${esc(p.emoji||'🚜')}</div>`;
+  modal(`${mediaHtml}<div class="tag">${esc(p.category)}</div><h2>${esc(p.name)}</h2><p>${esc(p.desc)}</p><h3>${esc(money(p.price))}</h3><div class="modal-actions"><button class="outline" onclick="closeModal()">Close</button><button class="green" onclick="closeModal();addToCart(${p.id})">Add to cart</button></div>`);
+}
+
+function openCart(){
+  const lines=cart.map(i=>{const p=products.find(x=>x.id===i.id);return p?`<div class="admin-item"><div class="detail"><strong>${esc(p.name)}</strong><small>${esc(money(p.price))} · Qty ${i.qty}</small></div><button class="outline" onclick="changeQty(${p.id},-1)">−</button><button class="outline" onclick="changeQty(${p.id},1)">+</button></div>`:''}).join('');
+  modal(`<h2>Your cart</h2>${lines||'<div class="empty">Your cart is empty.</div>'}${cart.length?`<button class="green full" onclick="checkCustomerBeforeCheckout()">Continue to order</button>`:''}<div class="modal-actions"><button class="outline" onclick="closeModal()">Close</button></div>`);
+}
+
+function changeQty(id,n){let i=cart.find(x=>x.id===id);if(i)i.qty+=n;cart=cart.filter(x=>x.qty>0);save();renderProducts();openCart()}
+
+function openCustomerProfile(){
+  modal(`<h2>👤 Customer Profile</h2><p class="muted">Save your details here so you don't have to re-enter them when placing orders.</p><form onsubmit="saveCustomerProfile(event)"><div class="field"><label>Your Name *</label><input name="name" value="${esc(customer.name)}" required></div><div class="field"><label>Phone Number *</label><input name="phone" value="${esc(customer.phone)}" required inputmode="tel" placeholder="10-digit mobile number"></div><div class="field"><label>Default Delivery Address / Location</label><textarea name="address" rows="2" placeholder="Village, Town, Landmark">${esc(customer.address)}</textarea></div><div class="modal-actions"><button type="button" class="outline" onclick="closeModal()">Cancel</button><button class="green" type="submit">Save Profile</button></div></form>`);
+}
+
+function saveCustomerProfile(e){
+  e.preventDefault();
+  const f=new FormData(e.target);
+  customer={name:f.get('name').trim(),phone:f.get('phone').trim(),address:f.get('address').trim()};
+  save();closeModal();toast('Profile saved successfully!');
+}
+
+function checkCustomerBeforeCheckout(){
+  if(!customer.name||!customer.phone){
+    modal(`<h2>Complete Your Details</h2><p class="muted">Please provide your contact information to complete your order request.</p><form onsubmit="saveAndCheckout(event)"><div class="field"><label>Your Name *</label><input name="name" value="${esc(customer.name)}" required></div><div class="field"><label>Phone Number *</label><input name="phone" value="${esc(customer.phone)}" required inputmode="tel"></div><div class="field"><label>Delivery Location *</label><input name="address" value="${esc(customer.address)}" required placeholder="Village / town"></div><div class="field"><label>Notes</label><textarea name="notes" rows="2" placeholder="Any specific requirements..."></textarea></div><div class="modal-actions"><button type="button" class="outline" onclick="openCart()">Back</button><button class="green" type="submit">Place Order</button></div></form>`);
+  }else{
+    checkoutForm();
+  }
+}
+
+function saveAndCheckout(e){
+  e.preventDefault();
+  const f=new FormData(e.target);
+  customer.name=f.get('name').trim();
+  customer.phone=f.get('phone').trim();
+  customer.address=f.get('address').trim();
+  orders.unshift({id:Date.now(),name:customer.name,phone:customer.phone,address:customer.address,notes:f.get('notes'),items:cart.map(i=>{let p=products.find(x=>x.id===i.id);return {name:p?.name||'Product',qty:i.qty}}),status:'New',created:new Date().toLocaleString()});
+  cart=[];save();closeModal();renderProducts();toast('Order request submitted successfully!');
+}
+
+function checkoutForm(){
+  modal(`<h2>Place an order request</h2><p class="muted">Ordering as: <strong>${esc(customer.name)}</strong> (${esc(customer.phone)})</p><form onsubmit="submitOrderDirect(event)"><div class="field"><label>Delivery location *</label><input name="address" value="${esc(customer.address)}" required placeholder="Village / town"></div><div class="field"><label>Notes / Special Requests</label><textarea name="notes" rows="2" placeholder="Quantity, equipment details, etc."></textarea></div><div class="modal-actions"><button type="button" class="outline" onclick="openCart()">Back</button><button class="green" type="submit">Submit order request</button></div></form>`);
+}
+
+function submitOrderDirect(e){
+  e.preventDefault();
+  const f=new FormData(e.target);
+  customer.address=f.get('address').trim();
+  orders.unshift({id:Date.now(),name:customer.name,phone:customer.phone,address:customer.address,notes:f.get('notes'),items:cart.map(i=>{let p=products.find(x=>x.id===i.id);return {name:p?.name||'Product',qty:i.qty}}),status:'New',created:new Date().toLocaleString()});
+  cart=[];save();closeModal();renderProducts();toast('Order request saved in this browser');
+}
+
+function openEnquiry(){
+  modal(`<h2>Send a product enquiry</h2><form onsubmit="submitEnquiry(event)"><div class="field"><label>Your name *</label><input name="name" value="${esc(customer.name)}" required></div><div class="field"><label>Phone number *</label><input name="phone" value="${esc(customer.phone)}" required inputmode="tel"></div><div class="field"><label>Equipment of interest</label><input name="product" placeholder="e.g. Mini plough"></div><div class="field"><label>Message</label><textarea name="message" rows="3"></textarea></div><div class="modal-actions"><button type="button" class="outline" onclick="closeModal()">Cancel</button><button class="green">Save enquiry</button></div></form>`);
+}
+
+function submitEnquiry(e){
+  e.preventDefault();
+  const f=new FormData(e.target);
+  if(!customer.name) { customer.name=f.get('name').trim(); customer.phone=f.get('phone').trim(); }
+  orders.unshift({id:Date.now(),name:f.get('name'),phone:f.get('phone'),address:'',notes:`ENQUIRY: ${f.get('product')} — ${f.get('message')}`,items:[],status:'New',created:new Date().toLocaleString()});
+  save();closeModal();toast('Enquiry saved');
+}
+
+function callSeller(){if(!settings.phone){toast('Add seller phone number in Admin settings first');return}location.href='tel:'+settings.phone.replace(/[^+\d]/g,'')}
+
+function switchAdminTab(t){adminTab=t;['products','orders','settings'].forEach(x=>document.getElementById('tab'+x[0].toUpperCase()+x.slice(1)).classList.toggle('active',x===t));renderAdmin()}
+
+function renderAdmin(){
+  document.getElementById('statProducts').textContent=products.length;
+  document.getElementById('statOrders').textContent=orders.length;
+  document.getElementById('statPending').textContent=orders.filter(o=>o.status==='New'||o.status==='Pending').length;
+  const panel=document.getElementById('adminPanel');
+  if(adminTab==='products'){
+    panel.innerHTML=`<div class="section-head"><div><h2>Product catalogue</h2><span class="muted">Add or update products with images.</span></div><button class="green" onclick="productForm()">＋ Add product</button></div><div class="admin-list">${products.map(p=>`<div class="admin-item"><img src="${esc(p.image||'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=150&q=80')}" style="width:48px;height:48px;object-fit:cover;border-radius:8px" alt=""><div class="detail"><strong>${esc(p.name)} ${p.active===false?'<span class="muted">(hidden)</span>':''}</strong><small>${esc(p.category)} · ${esc(money(p.price))}</small></div><button class="outline" onclick="productForm(${p.id})">Edit</button><button class="outline" onclick="toggleProduct(${p.id})">${p.active===false?'Show':'Hide'}</button><button class="outline" onclick="deleteProduct(${p.id})">Delete</button></div>`).join('')||'<div class="empty">No products yet.</div>'}</div>`;
+  }else if(adminTab==='orders'){
+    panel.innerHTML=`<div class="section-head"><div><h2>Customer orders & enquiries</h2><span class="muted">Update status as you handle requests.</span></div><button class="outline" onclick="exportOrders()">Export CSV</button></div><div class="admin-list">${orders.map(o=>`<div class="admin-item"><div class="detail"><strong>${esc(o.name)} · ${esc(o.phone)}</strong><small>${esc(o.created)} · ${esc(o.address||'No location provided')}</small><p style="margin:6px 0">${esc((o.items||[]).map(i=>i.name+' × '+i.qty).join(', ')||o.notes||'Enquiry')}</p><small>Notes: ${esc(o.notes||'—')}</small></div><div style="min-width:125px"><select onchange="updateOrderStatus(${o.id},this.value)" aria-label="Order status"><option ${o.status==='New'?'selected':''}>New</option><option ${o.status==='Contacted'?'selected':''}>Contacted</option><option ${o.status==='Confirmed'?'selected':''}>Confirmed</option><option ${o.status==='Delivered'?'selected':''}>Delivered</option><option ${o.status==='Cancelled'?'selected':''}>Cancelled</option></select><button class="outline full" style="margin-top:7px" onclick="deleteOrder(${o.id})">Delete</button></div></div>`).join('')||'<div class="empty">No orders yet.</div>'}</div>`;
+  }else{
+    panel.innerHTML=`<h2>Store settings</h2>
+      <form onsubmit="saveSettings(event)">
+        <div class="field"><label>Business name</label><input name="business" value="${esc(settings.business)}" required></div>
+        <div class="field"><label>Seller phone number</label><input name="phone" value="${esc(settings.phone)}" placeholder="e.g. +91 98765 43210"></div>
+        <div class="field"><label>Logo Image URL (Optional)</label><input name="logoUrl" value="${esc(settings.logoUrl||'')}" placeholder="https://example.com/logo.png"></div>
+        <div class="field"><label>Logo Emoji (Fallback if no image URL)</label><input name="logoEmoji" value="${esc(settings.logoEmoji||'🚜')}" maxlength="4"></div>
+        <button class="green">Save settings</button>
+      </form>`;
+  }
+}
+
+function productForm(id){
+  editingId=id||null;
+  const p=id?products.find(x=>x.id===id):{name:'',category:'Ploughs',price:'Contact for price',image:'',desc:'',active:true};
+  modal(`<h2>${id?'Edit product':'Add product'}</h2><form onsubmit="saveProduct(event)"><div class="field"><label>Product name *</label><input name="name" value="${esc(p.name)}" required maxlength="100"></div><div class="formrow"><div class="field"><label>Category</label><input name="category" value="${esc(p.category)}" required maxlength="60"></div><div class="field"><label>Price / price note</label><input name="price" value="${esc(p.price)}" placeholder="Contact for price" maxlength="60"></div></div><div class="field"><label>Product Image URL</label><input name="image" value="${esc(p.image||'')}" placeholder="https://images.unsplash.com/... (image link)"></div><div class="field"><label>Visible in shop?</label><select name="active"><option value="true" ${p.active!==false?'selected':''}>Yes</option><option value="false" ${p.active===false?'selected':''}>No</option></select></div><div class="field"><label>Description</label><textarea name="desc" rows="3" maxlength="500">${esc(p.desc)}</textarea></div><div class="modal-actions"><button type="button" class="outline" onclick="closeModal()">Cancel</button><button class="green">Save product</button></div></form>`);
+}
+
+function saveProduct(e){
+  e.preventDefault();
+  const f=new FormData(e.target);
+  const p={
+    id:editingId||Date.now(),
+    name:f.get('name').trim(),
+    category:f.get('category').trim(),
+    price:f.get('price').trim()||'Contact for price',
+    image:f.get('image').trim(),
+    desc:f.get('desc').trim(),
+    active:f.get('active')==='true'
+  };
+  if(editingId)products=products.map(x=>x.id===editingId?p:x);else products.unshift(p);
+  save();closeModal();renderProducts();renderAdmin();toast('Product saved');
+}
+
+function toggleProduct(id){products=products.map(p=>p.id===id?{...p,active:p.active===false}:p);save();renderProducts();renderAdmin()}
+function deleteProduct(id){if(confirm('Delete this product?')){products=products.filter(p=>p.id!==id);cart=cart.filter(i=>i.id!==id);save();renderProducts();renderAdmin();toast('Deleted')}}
+function updateOrderStatus(id,status){orders=orders.map(o=>o.id===id?{...o,status}:o);save();renderAdmin();toast('Status updated')}
+function deleteOrder(id){if(confirm('Delete order record?')){orders=orders.filter(o=>o.id!==id);save();renderAdmin()}}
+
+function saveSettings(e){
+  e.preventDefault();
+  const f=new FormData(e.target);
+  settings.business=f.get('business').trim();
+  settings.phone=f.get('phone').trim();
+  settings.logoUrl=f.get('logoUrl').trim();
+  settings.logoEmoji=f.get('logoEmoji').trim()||'🚜';
+  save();renderProducts();renderAdmin();toast('Store settings saved');
+}
+
+function exportOrders(){
+  const rows=[['Order ID','Date','Name','Phone','Location','Items','Notes','Status'],...orders.map(o=>[o.id,o.created,o.name,o.phone,o.address,(o.items||[]).map(i=>i.name+' x'+i.qty).join('; '),o.notes,o.status])];
+  const csv=rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='agro-tools-orders.csv';a.click();URL.revokeObjectURL(a.href);
+}
+
+function modal(html){document.getElementById('modalRoot').innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()"><div class="modal">${html}</div></div>`}
+function closeModal(){document.getElementById('modalRoot').innerHTML=''}
+let toastTimer;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.remove('hidden');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.add('hidden'),2600)}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const footerEl = document.querySelector('.footer');
+  if(footerEl) {
+    const adminLink = document.createElement('div');
+    adminLink.style.marginTop = '10px';
+    adminLink.innerHTML = `<a href="javascript:openAdminLogin()" style="color:#8abf98;font-size:12px;text-decoration:underline;">Admin Dashboard Login</a>`;
+    footerEl.appendChild(adminLink);
+  }
+});
+
+function openAdminLogin(){
+  modal(`<h2>Admin access</h2><p class="muted">Enter access code to open the dashboard.</p><div class="field"><label>Demo access code</label><input id="demoCode" type="password" placeholder="Enter DEMO"></div><div class="modal-actions"><button class="outline" onclick="closeModal()">Cancel</button><button class="green" onclick="adminLogin()">Open dashboard</button></div>`);
+}
+
+function adminLogin(){
+  if(document.getElementById('demoCode').value!=='DEMO'){toast('Enter DEMO');return}
+  closeModal();
+  document.getElementById('shopView').classList.add('hidden');
+  document.getElementById('adminView').classList.remove('hidden');
+  document.getElementById('topNav').classList.add('hidden');
+  renderAdmin();
+  window.scrollTo(0,0);
+}
+
+document.getElementById('searchInput').addEventListener('input',renderProducts);
+renderProducts();
+</script>
+</body>
+</html>
